@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoliyo</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script/index.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("X3kxn0LuqJmddBpj3");
+})();
+</script>
+</head>
+<body>
+    <header class="header">
+         <a href="#" class="logo">Portfoliyo</a>
+
+         <i class='bx bx-menu' id="menu-icon" ></i>
+
+         <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contect</a>
+         </nav>
+    </header>
+
+    <!-- home sectin design -->
+    <section class="home" id ="home">
+        <div class="home-content">
+        <h3>Hello It's me</h3>
+        <h1>Piyush Khandelwal</h1>
+        <h3>And I'm a <span class="multiple-text" id="multiple-text"></span></h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa porro fuga distinctio aliquid reprehenderit rem debitis iusto?</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/piyush.khandelwal.92"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://instagram.com/piyushgupta2320?igshid=OTk0YzhjMDVlZA=="><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://www.linkedin.com/in/piyush-khandelwal-ba4604236"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        <button class="btn" onclick="getDownloadUrl()">Download CV</button>
+        <a href="https://www.canva.com/design/DAFfGg3zrlU/JG-0wLc7yQVLuQp0sBjZ8w/view?website#4" class="btn">Show CV</a>
+    </div>
+        <div class="home-img">
+            <img src="image/image1.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="image/image1.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3>Developer</h3>
+            <p id="Abt">As a motivated and detail-oriented web development intern,I am excited to gain hands-on experience in the field of webdevelopment. I am currently pursuing a degree in Computer Science with a focus on web development , and I have done many courses in HTML, CSS, JavaScript and Java .</p>
+            <p id="1" style="display: none;" >I have also
+                completed an online web development course where I learned
+                how to use web development frameworks like Bootstrap and
+                React . And I also completed a Java course where i learned about all basic or advance 
+                concepts of java . I also have knowledge of Java Frameworks like Spring ,
+                Hibernate , JSF . I have completed more then eight projects using Java , JavaScript ,PHP and HTML or CSS</p>
+            <button id="bt" class="btn" onclick="show(1,'bt')" >Read More</button>
+            
+        </div>
+    </section>
+
+    <!-- service section design -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Web Development</h3>
+                <p>Our web development services encompass the entire development lifecycle, from conceptualization and design to coding, testing, and deployment.</p>
+                <p style="display: none;" id="2"> We have a team of experienced web developers who are proficient in a wide range of programming languages, frameworks, and content management systems.</p>
+                <button id="bt1" class="btn" onclick="show(2,'bt1')">Read More</button>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-category'></i>
+                <h3>backend Development</h3>
+                <p>we specialize in backend development, delivering robust and scalable solutions that support the seamless functioning of your software applications. </p>
+                <p style="display: none;" id="3">Our experienced backend developers possess in-depth knowledge of programming languages, frameworks, and technologies specifically designed for server-side development.</p>
+                <button id="bt2" class="btn" onclick="show(3,'bt2')">Read More</button>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-discord-alt' ></i>
+                <h3>Software DevelopMent</h3>
+                <p>we specialize in software development, offering comprehensive services to transform your software ideas into functional and innovative applications.</p>
+                <p style="display: none;" id="4">Our team of experienced software developers possesses a deep understanding of programming languages, frameworks, and development methodologies, enabling us to deliver high-quality and scalable software solutions.</p>
+                <button id="bt3" class="btn" onclick="show(4,'bt3')">Read More</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="portfoliyo" id="projects">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfoliyo-container">
+            <div class="portfoliyo-box">
+                <img src="image/project1.jpeg" alt="">
+                <div class="portfoliyo-layer">
+                    <h4>Library Management System</h4>
+                    <p>It is a java based web application which is use to manage a Library in online mode. It makes easy to store books and student  Information.</p>
+                    <a href="https://github.com/P-K-G/Library-Management-System.git"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfoliyo-box">
+                <img src="image/project2.jpeg" alt="">
+                <div class="portfoliyo-layer">
+                    <h4>Time converter by country</h4>
+                    <p>It is a java based web application which is use to convert time country by country. Used languages are Java, JSP, SQL,JavaScript and HTML/CSS</p>
+                    <a href="https://github.com/P-K-G/Time-Converter-By-Country.git"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfoliyo-box">
+                <img src="image/project3.jpeg" alt="">
+                <div class="portfoliyo-layer">
+                    <h4>Ticket Booking</h4>
+                    <p>It is a PHP based web application which is use to book tickets online. Used languages are PHP , MySQL , JavaScript and HTML/CSS</p>
+                    <a href="https://github.com/P-K-G/Online-Movie-Ticket-Booking.git"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfoliyo-box">
+                <img src="image/project4.jpeg" alt="">
+                <div class="portfoliyo-layer">
+                    <h4>Drum Kit</h4>
+                    <p>It is a JavaScript based web application which is use to learn playing Drum Kit. Used languages are JavaScript and HTML/CSS</p>
+                    <a href="https://github.com/P-K-G/DRUM-KIT.git"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfoliyo-box">
+                <img src="image/project5.jpeg" alt="">
+                <div class="portfoliyo-layer">
+                    <h4>Gym-Registration</h4>
+                    <p>It is a Java based web page which is use to Register for a Gym. Used languages are java ,JSP ,SQL and HTML/CSS</p>
+                    <a href="https://github.com/P-K-G/Gym-Registration.git"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfoliyo-box">
+                <img src="image/project6.jpeg" alt="">
+                <div class="portfoliyo-layer">
+                    <h4>Email_Sender</h4>
+                    <p>It is a JavaScript based web page which is use to send E-mails. Used languages are JavaScript, Bootstrap and HTML/CSS </p>
+                    <a href="https://github.com/P-K-G/Email_Sender.git"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <div id="myForm">
+            <div class ="input-box">
+                <input type="text" name="name" id="name" placeholder="Full Name">
+                <input type="email" id="email" name="email" placeholder="Email Address">
+            </div>
+            <div class ="input-box">
+                <input type="number" id="num" name="contact" placeholder="Mobile Number">
+                <input type="text" id="sub" name="email" placeholder="Email Subject">
+            </div>
+            <textarea name="body" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button class="btn" onclick="sendMail()">Send Message</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Click to go on top</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
